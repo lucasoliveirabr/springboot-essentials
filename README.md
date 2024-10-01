@@ -6,13 +6,15 @@ Repository that contains practical knowledge about various Spring Framework proj
 - Spring Framework
 - Spring Boot
 - Spring Data JPA
+- Spring Security
 
 ## <a name="technologies">⚙️ Project technologies</a>
 
 - ☕ Java 17
-- 🌱 Spring Boot
+- 🌱 Spring
 - 🌶️ Lombok
 - 🛢️ MySQL (MariaDB) and H2 Database
+- 💤 Hibernate
 - 🧪 JUnit and Mockito
 - 🔄 MapStruct
 
