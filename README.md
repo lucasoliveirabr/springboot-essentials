@@ -4,7 +4,7 @@ Repository that contains practical knowledge about various Spring Framework proj
 
 ## <a name="spring-projects">🌱 Spring projects</a>
 - Spring Framework
-- Spring Boot
+- Spring Boot 3
 - Spring Data JPA
 - Spring Security
 
@@ -17,6 +17,7 @@ Repository that contains practical knowledge about various Spring Framework proj
 - 💤 Hibernate
 - 🧪 JUnit and Mockito
 - 🔄 MapStruct
+- 📄 SpringDoc OpenAPI (Swagger)
 
 ## <a name="start">🚀 Run the project</a>
 
