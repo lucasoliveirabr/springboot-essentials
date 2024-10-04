@@ -2,6 +2,7 @@ package academy.devdojo.springboot.config;
 
 import academy.devdojo.springboot.service.AppUserDetailsService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
