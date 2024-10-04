@@ -27,6 +27,9 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<docker.repo.url>lucasoliveirabr</docker.repo.url>
+		<docker.repo.project>springboot-essentials</docker.repo.project>
+		<docker.image.name>${docker.repo.url}/${docker.repo.project}</docker.image.name>
 	</properties>
 
 	<dependencies>
@@ -150,6 +153,26 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.3</version>
+				<configuration>
+					<from>
+						<image>eclipse-temurin:17-jre</image>
+					</from>
+					<to>
+						<image>${docker.image.name}</image>
+						<credHelper>wincred</credHelper>
+						<tags>
+							<tag>${project.version}</tag>
+						</tags>
+					</to>
+					<container>
+						<mainClass>academy.devdojo.springboot.SpringbootEssentialsApplication</mainClass>
+					</container>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

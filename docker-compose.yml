@@ -1,3 +1,8 @@
+x-database-variables: &database-variables
+  SPRING_DATASOURCE_URL: jdbc:mariadb://mariadb_springboot_essentials:3306/springboot_essentials_anime?createDatabaseIfNotExist=true
+  SPRING_DATASOURCE_USERNAME: root
+  SPRING_DATASOURCE_PASSWORD: root
+
 services:
   db:
     image: mariadb
@@ -26,6 +31,13 @@ services:
     container_name: grafana
     ports:
       - 3000:3000
+
+  springboot-essentials:
+    image: lucasoliveirabr/springboot-essentials:1.0.0
+    ports:
+      - 8080:8080
+    environment:
+      <<: *database-variables
 
 volumes:
   devdojo_data:

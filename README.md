@@ -13,6 +13,7 @@ Repository that contains practical knowledge about various Spring Framework proj
 - ☕ Java 17
 - 🌱 Spring
 - 🌶️ Lombok
+- 🐋 Docker and jib
 - 🛢️ MySQL (MariaDB) and H2 Database
 - 🧪 JUnit and Mockito
 - 🔄 MapStruct
@@ -59,6 +60,16 @@ Make sure you have the following installed on your machine:
 
 > ```bash
 > mvn test -P all-tests
+> ```
+
+**Extra: Push image to Docker Hub with jib**
+
+> ```bash
+> docker login
+> ```
+
+> ```bash
+> mvn compile jib:build
 > ```
 
 ## <a name="start">🌐 Endpoints</a>
